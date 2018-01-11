@@ -1,0 +1,141 @@
+/*
+Theme Name: Herself Theme
+Template: twentyseventeen
+Author: Sara Landier
+Version: 0.1.O
+*/
+@import url("../twentyseventeen/style.css");
+
+/*HEADER*/
+@media screen and (min-width: 769px) {
+  .navigation-top{
+  font-size: 14px;
+  }
+  .site-navigation-fixed{
+    bottom: auto;
+    position: fixed;
+    z-index: 7;
+  }
+  #site-navigation li{
+    margin-left: 10%;
+    font-weight: normal;
+  }
+  .navigation-top .current-menu-item > a, .navigation-top .current_page_item > a{
+    border: 1px solid #862547;
+    color: #862547;
+
+  }
+}
+@media screen and (min-width: 1000px) {
+  .navigation-top{
+  font-size: 16px;
+  }
+  .site-navigation-fixed{
+    bottom: auto;
+    position: fixed;
+    z-index: 7;
+  }
+  #site-navigation li{
+    margin-left: 10%;
+    font-weight: normal;
+  }
+  .navigation-top .current-menu-item > a, .navigation-top .current_page_item > a{
+    border: 1px solid #862547;
+    color: #862547;
+  }
+}
+.site-branding{
+  display: none;
+}
+
+.home .site-branding{
+  display: inherit;
+}
+
+.main-navigation a:hover {
+	color: #862547;
+}
+
+.navigation-top {
+  border-bottom: 1px solid rgba(134,37,71,0.2);
+  border-top: 1px solid rgba(134,37,71,0.2);
+}
+
+/*BODY*/
+hr {
+  background-color: rgba(134,37,71,0.2);
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+/*A PROPOS*/
+.a-propos-title{
+  color: rgb(134,37,71);
+}
+.a-propos-title b{
+  font-weight: normal;
+}
+.a-propos .quote{
+  color: rgba(134,37,71,1);
+}
+
+/*ARTICLES*/
+.gallery-item{
+  padding: 0 5% 0 6%;
+  margin: 0 0 0 0;
+}
+.site-info{
+  color: rgb(118, 118, 130);
+}
+
+/*CONTACT*/
+label {
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-weight: normal;
+}
+button, input[type="button"], input[type="submit"]{
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-weight: normal;
+}
+.fm-header-description{
+	display: none;
+}
+.fm-header-title{
+	display: none;
+}
+.fm-form-container .fm-form .fm-message .fm-notice-success{
+  background-color: rgb(180, 180, 180);
+  border: rgb(180, 180, 180);
+}
+#form1{
+ display: block;
+  margin: auto;
+   width: 50%;
+}
+div .button-submit{
+  width: 40%;
+  margin: 0 30% 0 30%;
+}
+
+/*FOOTER*/
+.social-navigation a{
+  background-color: #862547;
+}
+.site-info a:focus,
+.site-info a:hover{
+  color: rgb(134,37,71);
+  -webkit-box-shadow: none;
+	box-shadow: none;
+}
+.site-footer {
+    border-top: 1px solid rgba(134,37,71,0.2);
+}
+.social-navigation a:hover,
+.social-navigation a:focus {
+	background-color: rgba(134,37,71,0.2);
+}
+.social-navigation:hover .icon,
+.social-navigation:focus .icon {
+  fill: #767676;
+}
