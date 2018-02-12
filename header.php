@@ -62,6 +62,13 @@
   <?php if ( has_nav_menu( 'top' ) ) : ?>
     <div class="navigation-top">
       <div class="wrap">
+				<!-- -->
+				<?php
+				 if(has_custom_logo()) {
+					the_custom_logo();
+				 }
+				 ?>
+				 <!-- -->
         <?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
       </div><!-- .wrap -->
     </div><!-- .navigation-top -->

@@ -5,79 +5,197 @@ Author: Sara Landier
 Version: 0.1.O
 */
 @import url("../twentyseventeen/style.css");
-
-/*HEADER*/
-@media screen and (min-width: 769px) {
-  .navigation-top{
-  font-size: 14px;
-  }
-  .site-navigation-fixed{
-    bottom: auto;
-    position: fixed;
-    z-index: 7;
-  }
-  #site-navigation li{
-    margin-left: 10%;
-    font-weight: normal;
-  }
-  .navigation-top .current-menu-item > a, .navigation-top .current_page_item > a{
-    border: 1px solid #862547;
-    color: #862547;
-
-  }
+@font-face {
+	font-family: 'sofiapro-light';
+	src: url('fonts/sofiapro-light.otf');
 }
-@media screen and (min-width: 1000px) {
-  .navigation-top{
-  font-size: 16px;
-  }
-  .site-navigation-fixed{
-    bottom: auto;
-    position: fixed;
-    z-index: 7;
-  }
-  #site-navigation li{
-    margin-left: 10%;
-    font-weight: normal;
-  }
-  .navigation-top .current-menu-item > a, .navigation-top .current_page_item > a{
-    border: 1px solid #862547;
-    color: #862547;
-  }
+/*HEADER*/
+.navigation-top .wrap{
+	max-width: 99%;
+	padding: 0;
+	margin: 0 auto;
+}
+.site-navigation-fixed{
+	bottom: auto;
+	position: fixed;
+	z-index: 7;
+}
+.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a{
+	border: 1px solid #C7A57D;
+	color: #C7A57D;
 }
 .site-branding{
   display: none;
 }
-
 .home .site-branding{
   display: inherit;
 }
-
 .main-navigation a:hover {
-	color: #862547;
+	color: #C7A57D;
+}
+.navigation-top {
+  border-bottom: 1px solid rgbargb(199,165,125,0.2);
+  border-top: 1px solid rgbargb(199,165,125,0.2);
 }
 
-.navigation-top {
-  border-bottom: 1px solid rgba(134,37,71,0.2);
-  border-top: 1px solid rgba(134,37,71,0.2);
+/*media queries header*/
+@media screen and (min-width: 48em){
+	.site-header .menu-scroll-down {
+		display: none;
+	}
+}
+@media screen and (max-width: 767px) {
+	#menu-item-272{
+		display: none;
+	}
+	.navigation-top{
+	font-size: 14px;
+	}
+}
+
+@media (min-width:768px) and (max-width:810px){
+	#menu-item-267, #menu-item-259, #menu-item-258, #menu-item-79{
+    padding-left: 2%;
+    font-weight: normal;
+  }
+	#wpmenucartli{
+		padding-right: -2%;
+	}
+	#menu-item-272{
+		padding-right: 1%;
+	}
+	.navigation-top{
+	font-size: 14px;
+	}
+	#menu-item-272 img{
+		height: 26px;
+		width: auto;
+	}
+}
+/*adaptabilité du menu*/
+@media (min-width:811px) and (max-width:844px){
+	#menu-item-267, #menu-item-259, #menu-item-258, #menu-item-79{
+		padding-left: 2%;
+		font-weight: normal;
+	}
+	#wpmenucartli{
+		padding-left: 2%;
+	}
+	#menu-item-272{
+		padding-right: 1%;
+	}
+	.navigation-top{
+	font-size: 14px;
+	}
+	#menu-item-272 img{
+		height: 30px;
+		width: auto;
+	}
+}
+/*adaptabilité du menu*/
+@media (min-width:845px) and (max-width:974px){
+	#menu-item-267, #menu-item-259, #menu-item-258, #menu-item-79{
+		padding-left: 2%;
+		font-weight: normal;
+	}
+	#wpmenucartli{
+		padding-left: 2%;
+	}
+	#menu-item-272{
+		padding-right: 1%;
+	}
+	.navigation-top{
+	font-size: 15px;
+	}
+	#menu-item-272 img{
+		height: 30px;
+		width: auto;
+	}
+}
+/*adaptabilité du menu*/
+@media (min-width:975px) and (max-width:1095px){
+	#menu-item-267, #menu-item-259, #menu-item-258, #menu-item-79{
+    padding-left: 3%;
+    font-weight: normal;
+  }
+	#wpmenucartli{
+		padding-left: 3%;
+	}
+	#menu-item-272{
+		padding-right: 2%;
+	}
+	.navigation-top{
+	font-size: 16px;
+	}
+	#menu-item-272 img{
+		height: 32px;
+		width: auto;
+	}
+}
+
+/*adaptabilité du menu*/
+@media (min-width:1096px) and (max-width:1199px){
+	#menu-item-267, #menu-item-259, #menu-item-258, #menu-item-79{
+    padding-left: 4%;
+    font-weight: normal;
+  }
+	#wpmenucartli{
+		padding-left: 5%;
+	}
+	#menu-item-272{
+		padding-right: 2%;
+	}
+	#menu-item-272 img{
+		height: 35px;
+		width: auto;
+	}
+	.navigation-top{
+	font-size: 16px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	#menu-item-267, #menu-item-259, #menu-item-258, #menu-item-79{
+    padding-left: 5%;
+    font-weight: normal;
+  }
+	#wpmenucartli{
+		padding-left: 8%;
+	}
+	#menu-item-272{
+		padding-right: 2%;
+	}
+	#menu-item-272 img{
+		height: 35px;
+		width: auto;
+	}
+	.navigation-top{
+	font-size: 16px;
+	}
 }
 
 /*BODY*/
+body{
+  font-family: 'sofiapro-light';
+}
 hr {
-  background-color: rgba(134,37,71,0.2);
+  background-color: rgbargb(199,165,125,0.2);
   border: 0;
   height: 1px;
   margin-bottom: 1.5em;
 }
+body{
+  color: black;
+}
 
 /*A PROPOS*/
 .a-propos-title{
-  color: rgb(134,37,71);
+  color: rgb(199,165,125);
 }
 .a-propos-title b{
   font-weight: normal;
 }
 .a-propos .quote{
-  color: rgba(134,37,71,1);
+  color: rgba(199,165,125,1);
 }
 
 /*ARTICLES*/
@@ -120,22 +238,28 @@ div .button-submit{
 
 /*FOOTER*/
 .social-navigation a{
-  background-color: #862547;
+  background-color: #C7A57D;
 }
 .site-info a:focus,
 .site-info a:hover{
-  color: rgb(134,37,71);
+  color: rgb(199,165,125);
   -webkit-box-shadow: none;
 	box-shadow: none;
 }
 .site-footer {
-    border-top: 1px solid rgba(134,37,71,0.2);
+    border-top: 1px solid rgbargb(199,165,125,0.2);
 }
 .social-navigation a:hover,
 .social-navigation a:focus {
-	background-color: rgba(134,37,71,0.2);
+	background-color: rgbargb(199,165,125,0.2);
 }
 .social-navigation:hover .icon,
 .social-navigation:focus .icon {
   fill: #767676;
+}
+
+/*WOOCOMMERCE*/
+
+.woocommerce-message{
+	background-color: #862547;
 }
